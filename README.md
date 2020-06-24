@@ -95,6 +95,14 @@ Book API Endpoint with a seamless experience
   > `http://localhost:8080/api/external-books`
 
 
+# TestCase
+
+###### TestCase was written for the API end points. To run the test
+###### Inside the Test folder
+###### BookTest.php file
+###### To run the test
+  > `vendor/bin/phpunit`
+
 
 
 
