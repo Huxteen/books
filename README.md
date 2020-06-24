@@ -9,22 +9,22 @@ Book API End Point with a seamless
 
 # Installation
 
-# clone the repository to your folder directory
-
+###### Clone the repository to your local directory
 > `https://github.com/Huxteen/books.git`
-##### clone the repository
+
+###### Clone the repository
 > `git clone https://github.com/Huxteen/books.git`
 
-# Navigate to the project directory 'books' to start the server
-##### Start the local server at port 8080
+#### Navigate to the project directory 'books' to start the server
+###### Start the local server at port 8080
 > `php -S localhost:8080  -t  public`
 
-# Web Browser
-### Once the local server is started Navigate to web brower
-### copy and paste the URL below to check if the app is running
+### Web Browser
+###### Once the local server is started Navigate to web brower
+###### copy and paste the URL below to check if the app is running
 > `http://localhost:8080/`
 
-### You should see the message on your browser
+##### You should see the message on your browser
 > `Congratulation!!! your book API endpoints is running successfully.</center>`
 
 
@@ -32,11 +32,11 @@ Book API End Point with a seamless
 
 
 
-### To be able to test this API you need a software development tool to enable you test calls to these endpoints. I used POSTMAN( https://www.postman.com/ ) for testing these endpoints and you can get download it from this URL( https://www.postman.com/ ).
+###### To be able to test this API you need a software development tool to enable you test calls to these endpoints. I used POSTMAN( https://www.postman.com/ ) for testing these endpoints and you can get download it from this URL( https://www.postman.com/ ).
 
-### The endpoints are made with the users thereby providing a seamless integration with a frontend Frame work like React, Vuejs or Others.
+###### The endpoints are made with the users thereby providing a seamless integration with a frontend Frame work like React, Vuejs or Others.
 
-### The databse has been populated with fake data of up to 150 entries, you are sure to have experience testing the endpoints.
+###### The databse has been populated with fake data of up to 150 entries, you are sure to have experience testing the endpoints.
 
 
 ## An overview of the API endpoint.
