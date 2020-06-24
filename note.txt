@@ -1,0 +1,44 @@
+
+name
+isbn
+author
+country
+number_of_pages
+publisher
+release_date
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ public function externalService()
+    {
+      $client = new Client();
+      $res = $client->request('GET', 'https://www.anapioficeandfire.com/api/books');
+      $data = $res->getBody()->getContents();
+      // $request = $client->get('https://jsonplaceholder.typicode.com/users');
+      // $request = $client->get('https://www.anapioficeandfire.com/api/books');
+      // $response = $request->getBody()->getContents();
+      // echo gettype($response);
+      // echo $res->getStatusCode();
+      // $obj = json_decode($response);
+      // echo gettype($obj);
+      // dd($obj);
+      // var_dump($obj);
+
+
+      // dd($response->json());
+      return $this->successResponse(json_decode($data);
+    }
