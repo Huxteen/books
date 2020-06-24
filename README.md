@@ -49,6 +49,12 @@ Book API Endpoint with a seamless experience
   > `/api/v1/books`
   ###### URL - You can paste the link below into your web browser to perform this GET request.
   > `http://localhost:8080/api/v1/books`
+  ###### search Filters - You can filter the query result with any combination of 
+  ###### name || country || publisher || year
+  > `http://localhost:8080/api/v1/books?name=kunze`
+  > `http://localhost:8080/api/v1/books?name=laudantium&country=united kingdom`
+  > `http://localhost:8080/api/v1/books?name=laudantium&country=united kingdom&publisher=son`
+  > `http://localhost:8080/api/v1/books?name=laudantium&country=united kingdom&publisher=son&year=2015`
 
 ### POST - Post a books to the database
   > `/api/v1/books`

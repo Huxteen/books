@@ -53,10 +53,30 @@ class BookController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-      $books = Book::all();
+      
+      $country = ($request->get('country')? $request->get('country') : 'no-search');
+      $name = ($request->get('name')? $request->get('name') : 'no-search');
+      $publisher = ($request->get('publisher')? $request->get('publisher') : 'no-search');
+      $year = ($request->get('year')? $request->get('year') : 'no-search');
+      if($country || $name || $publisher || $year){
+        $books = Book::query()
+            ->where('name', 'LIKE', "%{$name}%") 
+            ->orWhere('country', 'LIKE', "%{$country}%") 
+            ->orWhere('publisher', 'LIKE', "%{$publisher}%") 
+            ->orWhere('release_date', 'LIKE', "%{$year}%") 
+            ->get();
+      }else{ 
+        $books = Book::all(); 
+      }
+
       return $this->successResponse($books);
+
+
+      
+
+      
     }
 
 
